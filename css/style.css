@@ -8,6 +8,36 @@
    outline: none;
 }
 
+@font-face {
+   font-family: 'Museo Sans Cyrl 700';
+   src: url('../fonts/');
+   src: local('../fonts/MuseoSansCyrl-700'),
+      url('../fonts/?#iefix') format('embedded-opentype'),
+      url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
+      url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('../fonts/');
+   font-style: normal;
+   font-weight: normal;
+   src: local('Roboto'),
+      url('../fonts/Roboto-Regular.ttf') format('ttf');
+
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url('../fonts/');
+   font-style: normal;
+   font-weight: bold;
+   src: local('Roboto'),
+      url('../fonts/Roboto-Bold.ttf') format('ttf');
+}
+
 html,
 body {
    font-size: 62.5%;
@@ -23,7 +53,10 @@ body {
 }
 
 .header {
-   padding: 6.4rem 0 6.4rem 0;
+   position: absolute;
+   left: 50%;
+   top: 6.4rem;
+   transform: translate(-50%, 0);
 }
 
 .header .container {
@@ -63,7 +96,91 @@ body {
    margin-right: 2rem;
 }
 
+.main {
+   background: url("../img/background.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: center;
+   background-position-y: top;
+   padding-top: 18.7rem;
+   font-size: 1.4rem;
+   min-height: 900px;
+}
+
+.main__smallDescription {
+   line-height: 1.1428;
+}
+
+.main__content {}
+
+.main__rating {
+   display: flex;
+   height: 14px;
+   align-items: center;
+   justify-content: flex-start;
+   margin: 16px 0 10px 0;
+}
+
+.main__raiting-stars {
+   width: 1.2rem;
+   height: 1.2rem;
+   flex-shrink: 0;
+   cursor: pointer;
+}
+
+.main__raiting-stars:not(:last-child) {
+   margin-left: 0.4rem;
+}
+
+.main-raiting-numerical {
+   font-size: 1.2rem;
+   line-height: 1.166;
+   margin-left: 0.9rem;
+}
+
+.main__title {
+   font-family: 'Museo Sans Cyrl 700';
+   font-weight: 600;
+   font-size: 7.6rem;
+   line-height: 9.1rem;
+   margin: 0;
+}
+
+.main__description {
+   line-height: 150%;
+   margin: 0.8rem 0 4.1rem 0;
+   max-width: 52.8rem;
+}
+
+.main__buyButton {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 1.4rem;
+   line-height: 1.143;
+   color: #ffffff;
+   max-width: 24.5rem;
+   padding: 2.2rem 7.2rem;
+   background-color: #151515;
+   border-radius: 0.8rem;
+   margin-bottom: 8.8rem;
+
+}
+
+.main__playButton {}
+
+.main__series {}
+
+
+
 .footer {
+   position: absolute;
+   left: 50%;
+   bottom: 0rem;
+   transform: translate(-50%, 0);
    background: #030102;
    padding: 2rem 0 2rem 0;
 }
@@ -93,8 +210,4 @@ body {
 .footer__menu li a {
    color: #ffffff;
    text-decoration: none;
-}
-
-body {
-   background: url("../img/background.jpg");
 }
