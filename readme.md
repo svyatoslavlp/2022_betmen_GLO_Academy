@@ -1,1 +1,1 @@
-# Интенсив GLO_Academy - Betmet
+# Интенсив GLO_Academy - Betmen
