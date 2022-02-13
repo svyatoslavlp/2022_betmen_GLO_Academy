@@ -6,8 +6,9 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/swiper-bundle.css">
    <link rel="stylesheet" href="css/style.css">
-   <title>Document</title>
+   <title>Бетмен</title>
 </head>
 
 <body>
@@ -61,7 +62,33 @@
             <a href="#" class="main__buyButton">Купить билеты</a>
          </div>
          <div class="main__playButton"></div>
-         <div class="main__series"></div>
+         <div class="main__series">
+            <div class="main__slider swiper">
+               <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="main__slide swiper-slide">
+                     <img src="/img/card-image0.png" alt="Трейлер #1">
+                     <span>Трейлер #1</span>
+                  </div>
+                  <div class="main__slide swiper-slide">
+                     <img src="/img/card-image1.png" alt="Трейлер #2">
+                     <span>Трейлер #2</span>
+                  </div>
+                  <div class="main__slide swiper-slide">
+                     <img src="/img/card-image0.png" alt="Трейлер #3">
+                     <span>Трейлер #3</span>
+                  </div>
+                  <div class="main__slide swiper-slide">
+                     <img src="/img/card-image1.png" alt="Трейлер #4">
+                     <span>Трейлер #4</span>
+                  </div>
+               </div>
+
+            </div>
+            <div class="main__series-arrow">
+               <img src="img/arrow.svg" alt="">
+            </div>
+         </div>
       </div>
    </main>
    <footer class="footer">
@@ -82,6 +109,8 @@
          </ul>
       </div>
    </footer>
+   <script src="js/swiper-bundle.js"></script>
+   <script src="js/main.js"></script>
 </body>
 
 </html>
