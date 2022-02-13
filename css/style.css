@@ -175,6 +175,7 @@ body {
 .main__series {
    width: 41.6rem;
    display: flex;
+   align-items: center;
 }
 
 .main__slide {
@@ -198,11 +199,11 @@ body {
 }
 
 .main__series-arrow {
-   position: relative;
    width: 3.15rem;
    height: 2.2rem;
    margin-left: 2.8rem;
    flex-shrink: 0;
+   cursor: pointer;
 }
 
 .main__series-arrow img {
