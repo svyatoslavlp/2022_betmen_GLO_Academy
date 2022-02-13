@@ -146,11 +146,51 @@ body {
    margin: 0;
 }
 
+.main__moreDetailed {
+   display: flex;
+   width: 97.5rem;
+   justify-content: space-between;
+}
+
 .main__description {
    line-height: 150%;
    margin: 0.8rem 0 4.1rem 0;
    max-width: 52.8rem;
 }
+
+.main__playButton {
+   width: 13.2rem;
+   height: 13.2rem;
+   position: relative;
+   cursor: pointer;
+}
+
+.main__greyArea {
+   position: absolute;
+   width: 13.2rem;
+   height: 13.2rem;
+   border-radius: 50%;
+   background: #151515;
+   opacity: 0.5;
+}
+
+.main__darkArea {
+   position: absolute;
+   left: 1.6rem;
+   bottom: 1.6rem;
+   width: 10rem;
+   height: 10rem;
+   background: #151515;
+   border-radius: 50%;
+}
+
+.main__playButton img {
+   position: relative;
+   z-index: 1;
+   left: 5.4rem;
+   top: 4.6rem;
+}
+
 
 .main__buyButton {
    display: flex;
